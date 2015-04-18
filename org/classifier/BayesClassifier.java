@@ -1,4 +1,4 @@
-package de.daslaboratorium.machinelearning.classifier;
+package org.classifier;
 
 import java.util.Collection;
 import java.util.Comparator;

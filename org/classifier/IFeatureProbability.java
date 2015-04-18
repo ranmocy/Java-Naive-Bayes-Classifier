@@ -1,4 +1,4 @@
-package de.daslaboratorium.machinelearning.classifier;
+package org.classifier;
 
 /**
  * Simple interface defining the method to calculate the feature probability.

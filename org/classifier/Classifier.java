@@ -1,4 +1,4 @@
-package de.daslaboratorium.machinelearning.classifier;
+package org.classifier;
 
 import java.util.Collection;
 import java.util.Dictionary;
@@ -28,7 +28,7 @@ public abstract class Classifier<T, K> implements IFeatureProbability<T, K> {
 
     /**
      * Initial capacity of feature dictionaries. It should be quite big, because
-     * the features will quickly outnumber the categories. 
+     * the features will quickly outnumber the categories.
      */
     private static final int INITIAL_FEATURE_DICTIONARY_CAPACITY = 32;
 
@@ -258,7 +258,7 @@ public abstract class Classifier<T, K> implements IFeatureProbability<T, K> {
 
     /**
      * Retrieves the number of occurrences of the given category.
-     * 
+     *
      * @param category The category, which count should be retrieved.
      * @return The number of occurrences.
      */
@@ -284,8 +284,8 @@ public abstract class Classifier<T, K> implements IFeatureProbability<T, K> {
      * <code>0.5</code>. The probability defaults to the overall feature
      * probability.
      *
-     * @see de.daslaboratorium.machinelearning.classifier.Classifier#featureProbability(Object, Object)
-     * @see de.daslaboratorium.machinelearning.classifier.Classifier#featureWeighedAverage(Object, Object, IFeatureProbability, float, float)
+     * @see org.classifier.Classifier#featureProbability(Object, Object)
+     * @see org.classifier.Classifier#featureWeighedAverage(Object, Object, IFeatureProbability, float, float)
      *
      * @param feature The feature, which probability to calculate.
      * @param category The category.
@@ -301,7 +301,7 @@ public abstract class Classifier<T, K> implements IFeatureProbability<T, K> {
      * overall weight of <code>1.0</code>, an assumed probability of
      * <code>0.5</code> and the given object to use for probability calculation.
      *
-     * @see de.daslaboratorium.machinelearning.classifier.Classifier#featureWeighedAverage(Object, Object, IFeatureProbability, float, float)
+     * @see org.classifier.Classifier#featureWeighedAverage(Object, Object, IFeatureProbability, float, float)
      *
      * @param feature The feature, which probability to calculate.
      * @param category The category.
@@ -319,7 +319,7 @@ public abstract class Classifier<T, K> implements IFeatureProbability<T, K> {
      * the given weight and an assumed probability of <code>0.5</code> and the
      * given object to use for probability calculation.
      *
-     * @see de.daslaboratorium.machinelearning.classifier.Classifier#featureWeighedAverage(Object, Object, IFeatureProbability, float, float)
+     * @see org.classifier.Classifier#featureWeighedAverage(Object, Object, IFeatureProbability, float, float)
      *
      * @param feature The feature, which probability to calculate.
      * @param category The category.
